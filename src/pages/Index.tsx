@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { GameModeSelector } from '@/components/GameModeSelector';
-import { RacingGame, GameMode } from '@/components/RacingGame';
+import { RacingGame3D, GameMode } from '@/components/RacingGame3D';
 import { Leaderboard } from '@/components/Leaderboard';
 
 type AppState = 'menu' | 'playing' | 'leaderboard';
@@ -33,7 +33,7 @@ const Index = () => {
   switch (appState) {
     case 'playing':
       return (
-        <RacingGame 
+        <RacingGame3D 
           mode={selectedMode}
           onGameEnd={handleGameEnd}
           onBack={handleBackToMenu}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { GameMode } from './RacingGame';
+import { GameMode } from './RacingGame3D';
 
 interface GameModeInfo {
   mode: GameMode;
@@ -54,10 +54,10 @@ const gameModes: GameModeInfo[] = [
   {
     mode: 'competition',
     title: 'Competition Mode',
-    description: 'The ultimate challenge for racing masters.',
+    description: 'The ultimate challenge with aggressive AI, nitro boosts, and health system.',
     timeLimit: '2 minutes',
     difficulty: 'Insane',
-    features: ['Maximum AI cars', 'Extreme difficulty', 'Championship scoring'],
+    features: ['Aggressive AI racing', 'Nitro boost system', 'Health & damage system', 'Real-time ranking'],
     color: 'game-racing-red',
   },
 ];
