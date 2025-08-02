@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				game: {
+					'neon-blue': 'hsl(var(--game-neon-blue))',
+					'neon-pink': 'hsl(var(--game-neon-pink))',
+					'neon-green': 'hsl(var(--game-neon-green))',
+					'neon-yellow': 'hsl(var(--game-neon-yellow))',
+					'racing-red': 'hsl(var(--game-racing-red))',
+					'dark-bg': 'hsl(var(--game-dark-bg))',
+					'road-gray': 'hsl(var(--game-road-gray))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +93,54 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neon-pulse': {
+					'0%, 100%': {
+						opacity: '1',
+						textShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor'
+					},
+					'50%': {
+						opacity: '0.8',
+						textShadow: '0 0 2px currentColor, 0 0 5px currentColor, 0 0 8px currentColor'
+					}
+				},
+				'racing-zoom': {
+					'0%': {
+						transform: 'scale(1) translateY(0)'
+					},
+					'50%': {
+						transform: 'scale(1.05) translateY(-2px)'
+					},
+					'100%': {
+						transform: 'scale(1) translateY(0)'
+					}
+				},
+				'slide-in-left': {
+					'0%': {
+						transform: 'translateX(-100%)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateX(0)',
+						opacity: '1'
+					}
+				},
+				'road-lines': {
+					'0%': {
+						transform: 'translateY(0)'
+					},
+					'100%': {
+						transform: 'translateY(20px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
+				'racing-zoom': 'racing-zoom 0.3s ease-out',
+				'slide-in-left': 'slide-in-left 0.5s ease-out',
+				'road-lines': 'road-lines 0.5s linear infinite'
 			}
 		}
 	},

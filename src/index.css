@@ -8,35 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 222 28% 15%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 28% 18%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 28% 18%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 190 90% 55%;
+    --primary-foreground: 222 47% 11%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 222 28% 25%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 222 28% 25%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 310 100% 70%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 222 28% 25%;
+    --input: 222 28% 25%;
+    --ring: 190 90% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Game-specific colors */
+    --game-neon-blue: 190 90% 55%;
+    --game-neon-pink: 310 100% 70%;
+    --game-neon-green: 120 90% 60%;
+    --game-neon-yellow: 50 100% 70%;
+    --game-racing-red: 0 90% 60%;
+    --game-dark-bg: 222 28% 8%;
+    --game-road-gray: 200 10% 50%;
+    
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, hsl(var(--game-neon-blue)), hsl(var(--game-neon-pink)));
+    --gradient-racing: linear-gradient(135deg, hsl(var(--game-racing-red)), hsl(var(--game-neon-yellow)));
+    --gradient-game-bg: linear-gradient(180deg, hsl(var(--game-dark-bg)), hsl(var(--background)));
+    
+    /* Shadows */
+    --shadow-neon: 0 0 20px hsl(var(--game-neon-blue) / 0.5);
+    --shadow-racing: 0 0 30px hsl(var(--game-racing-red) / 0.4);
 
     --sidebar-background: 0 0% 98%;
 
